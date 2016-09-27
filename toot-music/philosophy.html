@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta lang="en">
+  <meta name="author" content="@harsithr">
+  <meta name="description" content="Toot Player">
+ 
+  <title>Toot Player</title>
+  
+  <!--The css files have been linked first in no particular order so that the styles loads along with the html document.-->
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href=" music.css">
+  <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+  <body  class="main-area">
+   <!-- This is the navigation-->
+    
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#">Home</a>
+                    </li>
+                    <li>
+                       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="dropdown-button">Playlists
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href=" devotional.html">Devotional</a></li>
+      <li><a href=" melody.html">Melody</a></li>
+      <li><a href="index.html">Philosophy</a></li>
+    </ul>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+  <div id="total-area">  
+  <br><br><br>
+    
+    <div align="center">
+     <!--This contains all the code for setting up the audio player. The preload component is set to true so that the tracks load themselves when fixed by the player.js code-->
+     <br><br>
+      <audio preload align="center"></audio>
+     <br>
+     
+    <!--These are the control buttons for the audio.--> 
+      <button id='previousSong' class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-backward"></span> </button>
+     <button id='pauseSong' class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-pause"></span> </button>
+     <button id='nextSong' class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-forward"></span> </button>
+     
+     
+    <br><br>
+    
+     <!-- This is the Music Playlist which contains all the songs in list elements in an <a> tag-->
+     <div class="music-playlist">
+     <ol id="song-list">
+      <li><a href="#" data-src=" Monster.mp3" class="song-list-item"> Monster </a> </li>
+      <li><a href="#" data-src=" BetMyLife.mp3" class="song-list-item"> I Bet My Life  </a></li>
+      <li><a href="#" data-src=" ItsTime.mp3" class="song-list-item">  Its Time  </a></li>
+      <li><a href="#" data-src=" Demons.mp3" class="song-list-item"> Demons </a></li>
+      <li><a href="#" data-src=" OnTopOfTheWorld.mp3" class="song-list-item"> On Top Of The World</a></li>
+     </ol>
+   </div>
+  </div>
+    </div>
+    
+   
+  
+  
+        
+<!-- These are the files that are linked to the html document. The javascript libraries have been linked first as the code on the player.js file depends totally upon the jquery library and the audio.j library -->
+<script src=" jquery-3.1.0.min.js" type="text/javascript"></script>
+<script src=" audio.min.js" type="text/javascript"></script>
+<script src=" player.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

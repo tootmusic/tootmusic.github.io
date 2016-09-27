@@ -1,0 +1,49 @@
+#total-area{
+  background: linear-gradient(to left, #7b4397, #dc2430);
+  padding-bottom: 1000px;
+  color: #180520;
+}
+a {
+  
+  text-decoration: none;
+  color: #180520;
+}
+
+#song-list { 
+  
+  list-style: none; 
+  width: 500px;
+  line-height: 30px;
+   
+  
+}
+
+#dropdown-button{
+  
+  margin-top: 10px;
+}
+
+ol{
+  background-color:#cae9f9; 
+}
+ol li a{
+  
+  color: black;
+}
+li.playing {
+  color: white;
+  background-color: #724ca3;
+  
+  
+  
+}
+
+li.playing a {
+  color: white;
+  background-color: #724ca3;
+  
+}
+
+
+
+
